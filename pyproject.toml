@@ -1,0 +1,17 @@
+[tool.ruff]
+select = ["F", "E", "W"]
+ignore = ["E402"]
+line-length = 88
+
+[tool.mypy]
+files = [
+    "backend/",
+    "models/",
+    "routers/",
+    "schemas/",
+    "utils/",
+]
+strict = true
+warn_unused_configs = true
+disallow_any_expr = true
+disallow_any_unimported = true
